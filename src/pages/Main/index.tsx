@@ -8,7 +8,7 @@ import { Currency } from "../../types";
 const selectOptions = [
   { label: "Українська гривня", value: "UAH" },
   { label: "Доллар США", value: "USD" },
-  { label: "Евро", value: "EUR" },
+  { label: "Євро", value: "EUR" },
 ];
 
 const useCurrencyRate = (sourceCurrency: string, targetCurrency: string) => {
