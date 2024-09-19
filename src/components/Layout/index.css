@@ -1,0 +1,13 @@
+.layout {
+  height: 100%;
+  background-color: #f5f4f4;
+}
+
+.layout-content {
+  padding: 24px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
