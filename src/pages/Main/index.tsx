@@ -51,7 +51,7 @@ const useCurrencyRate = (sourceCurrency: string, targetCurrency: string) => {
 export const Main = () => {
   const [targetValue, setTargetValue] = useState<string>("");
   const [sourceValue, setSourceValue] = useState<string>("");
-  const [sourceCurrency, setSourceCurrency] = useState("EUR");
+  const [sourceCurrency, setSourceCurrency] = useState("UAH");
   const [targetCurrency, setTargetCurrency] = useState("USD");
 
   const rate = useCurrencyRate(sourceCurrency, targetCurrency);
