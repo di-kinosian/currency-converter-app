@@ -29,15 +29,20 @@ export const CurrencyControl: React.FC<Props> = ({
     onBlur?.(e.target.value);
   };
   return (
-    <div className="page-container">
+    <div className="currency-control">
       <Input
         type="number"
         value={value}
-        width="400px"
+        className="currency-input"
         onChange={handleChange}
         onBlur={handleBlur}
       />
-      <Select options={options} value={currency} onChange={onChangeCurrency} />
+      <Select
+        options={options}
+        value={currency}
+        onChange={onChangeCurrency}
+        className="currency-select"
+      />
     </div>
   );
 };

@@ -57,19 +57,19 @@ export const Main = () => {
   const rate = useCurrencyRate(sourceCurrency, targetCurrency);
 
   useEffect(() => {
-    setTargetValue((Number(sourceValue) * rate).toFixed(2));
+    setTargetValue(sourceValue ? (Number(sourceValue) * rate).toFixed(2) : "");
   }, [rate]);
 
   const changeSourceValue = (value: string) => {
     setSourceValue(value);
     const newValue = Number(value) * rate;
-    setTargetValue(newValue.toFixed(2));
+    setTargetValue(newValue ? newValue.toFixed(2) : "");
   };
 
   const changeTargetValue = (value: string) => {
     setTargetValue(value);
     const newValue = Number(value) / rate;
-    setSourceValue(newValue.toFixed(2));
+    setSourceValue(newValue ? newValue.toFixed(2) : "");
   };
 
   return (

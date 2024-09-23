@@ -4,10 +4,11 @@
 }
 
 .layout-content {
-  padding: 24px 0;
-  max-width: 1200px;
+  padding: 24px;
+  max-width: 900px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 24px;
+  box-sizing: border-box;
 }

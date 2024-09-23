@@ -4,8 +4,10 @@ import React, {
   ReactNode,
   forwardRef,
   useCallback,
+  useEffect,
   useMemo,
   useRef,
+  useState,
 } from "react";
 import cn from "classnames";
 import "./index.css";
@@ -29,7 +31,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
       invalid,
       className,
       clearable,
-      width = "100%",
+      width,
       onClear,
       onChange,
       onBlur,

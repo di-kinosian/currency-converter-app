@@ -9,7 +9,8 @@
 }
 
 .header-content {
-  max-width: 1200px;
+  max-width: 900px;
+  padding: 0 24px;
   box-sizing: border-box;
   flex-grow: 1;
   color: gray;
